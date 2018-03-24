@@ -6,7 +6,7 @@ const User = new Schema({
 	username: String,
 	password: {type: String, select: false},
 	firstName: String,
-	lastName: String
+	lastName: String,
 });
 User.plugin(passportLocalMongoose);
 
